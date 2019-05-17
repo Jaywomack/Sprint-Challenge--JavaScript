@@ -30,32 +30,69 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+<!-- The forEach method executes a provided function once for each array element while the .map method creates a new array with the results and applies the provided function on every element in the array. -->
+
+
 2. What is the difference between a function and a method?
+
+<!-- 
+A function is called by name, a method is called by a name that is associated with an object.
+
+A function explicitly passes data whereas a method is implicitly passed the object on which it was called. 
+
+A method is able to operate on data that is contained within a class. -->
+
 
 3. What is closure?
 
+<!-- closure is when an inner function has access to the outer  function’s variables 
+The closure has three scope chains:
+
+it has access to its own scope — variables defined between its curly brackets
+it has access to the outer function’s variables
+it has access to the global variables -->
+
+
 4. Describe the four rules of the 'this' keyword.
 
+<!-- 1. The window binding is not/very rarely used. It is the forest of trees 'use strict' can help us avoid accidentally
+referencing the window object.
+
+2. Implicit binding occurs when dot notation is used to invoke a function. The implicit binding is automatic with objects and only occurs with objects and methods, not functions. When a object or method is invoked the 'this' keyword refers to the object to the left of the dot.  hobbit('this').cook()
+
+3. Explicit binding of this occurs when .call(), .apply(), or .bind() are used on a function. Explicit binding is for functions. Using the .call .apply and .bind methods will explicitly set the 'this' keyword.
+
+4.  New binding :
+
+4.1- An empty object is created and referenced by this variable, inheriting the prototype of the function.
+
+4.2- Properties and methods are added to the object referenced by this.
+
+4.3- The newly created object referenced by this is returned at the end implicitly (if no other object was returned explicitly).
+ -->
+
 5. Why do we need super() in an extended class?
+
+<!-- super() has to be called in order to call the methods of the parent class and ‘This’ is not initialized until you call super(). -->
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Add your Project Manager as a Reviewer on the Pull-request
+- [x] PM then will count the HW as done by  merging the branch back into master.
 
 
 ## Minimum Viable Product
@@ -85,3 +122,4 @@ In your solutions, it is essential that you follow best practices and produce cl
 ## Stretch Problems
 
 There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements!
+Jared-Womack
